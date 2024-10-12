@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Amu, My Love</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* Full-screen pink background */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffcccb; /* Light pink background */
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Overlay for better text visibility */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        /* Main content styling */
+        .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4em;
+            text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.8);
+            animation: slide-in 1s ease forwards, heartbeat 1s infinite alternate;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin: 20px 0;
+            text-shadow: 1px 1px 4px rgba(255, 105, 180, 0.8);
+            animation: fade-in 2s ease forwards;
+        }
+
+        p {
+            font-size: 1.5em;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 20px auto;
+            animation: fade-in 2.5s ease forwards;
+        }
+
+        .hearts {
+            font-size: 4em;
+            animation: bounce 1s infinite alternate;
+            margin-top: 20px;
+        }
+
+        /* Keyframe animations */
+        @keyframes slide-in {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="content">
+        <h1>For My Sweet Amu ❤️</h1>
+        <h2>You Are My Sunshine ☀️</h2>
+        <p>
+            In your smile, I find my happiness. <br>
+            Your eyes shine brighter than the stars. <br>
+            With you, every moment is pure magic. 💖
+        </p>
+        <div class="hearts">💖 💕 💘</div>
+    </div>
+
+</body>
+</html>
